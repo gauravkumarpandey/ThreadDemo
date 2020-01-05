@@ -61,12 +61,9 @@ public static void main(String []args) {
 		   System.out.println("Caught throwable " + e +
 		   " for thread " + t);
 	   });
-	   
-	   
+	      
 	   thd.start();
-	   
-	  
-	   
+	      
 	   //when ever an exception is thrown from a child thread the main thread still complete its execution..
 	   ThreadHelper.sleep(1000);
 	   System.out.println("In main thread "+ Thread.currentThread());
